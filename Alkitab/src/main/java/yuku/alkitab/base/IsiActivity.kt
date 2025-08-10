@@ -2654,7 +2654,10 @@ class IsiActivity : BaseLeftDrawerActivity(), LeftDrawer.Text.Listener, Exoplaye
                 exoplayerController.playOrPause(false)
             }
 
-            updateAudioForNewChapter()
+            Log.d(TAG, "openVersionsDialog: versionId - ${activeSplit0.versionId}")
+            Log.d(TAG, "openVersionsDialog: version - ${activeSplit0.mv.longName}")
+
+            //updateAudioForNewChapter()
             // We may need to apply PerVersion settings.
             applyPreferences()
         }
